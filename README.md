@@ -31,3 +31,7 @@ The customer enquiry uses four steps: contact details, car preferences, budget a
 The budget supports RM30,000 upward in RM10,000 increments, direct entry beyond the slider range, and a No upper limit option. Timeline choices span two weeks to six months. Changing the make resets the model; choosing No for trade-in omits all previous trade-in answers from the final enquiry.
 
 `src/car-catalog.json` is a dated snapshot researched from https://www.carbase.my/car-brands-malaysia/ and its individual brand pages on 15 October 2026. The initial 30 popular-brand choices were informed by https://www.bitauto.my/en/brand-sales-ranking/2025/ and extended with the wider CarBase directory. Tesla and Mercedes-Benz are excluded. Brand choices indicate preferences, not confirmed representation or stock. The directory has incomplete entries for some niche brands, and may lag manufacturer changes; Other model / Other brand inputs cover gaps. Historical entries are included for trade-in selection. Review this catalogue before launch and periodically thereafter.
+
+## Cloudflare Workers Builds
+
+For the Workers setup screen, use build command `npm run build` and deploy command `npx wrangler deploy`. The committed `wrangler.json` sets the Worker name to `motormate`, compatibility date, and static assets directory to `dist`. The existing command `npx wrangler deploy --assets ./dist` also works with this configuration.

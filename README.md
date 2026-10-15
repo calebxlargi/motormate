@@ -35,3 +35,7 @@ The budget supports RM30,000 upward in RM10,000 increments, direct entry beyond 
 ## Cloudflare Workers Builds
 
 For the Workers setup screen, use build command `npm run build` and deploy command `npx wrangler deploy`. The committed `wrangler.json` sets the Worker name to `motormate`, compatibility date, and static assets directory to `dist`. The existing command `npx wrangler deploy --assets ./dist` also works with this configuration.
+
+## Page structure
+
+The customer landing page flows from About to the pinned buying journey, the customer enquiry and then Q&A. Dealer content, the partner network and dealer enquiry live at `/partners`, linked as menu item 05. Workers static assets use single-page-application fallback so direct visits to `/partners` load correctly.

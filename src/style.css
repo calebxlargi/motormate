@@ -39,3 +39,6 @@ button{color:inherit;-webkit-appearance:none;appearance:none}.arrow-icon{display
 .contact .form-progress>span,.contact .form-progress>span.done{border-top-color:#c4c9cc}.contact .form-progress>[aria-current=step]{border-top-color:var(--orange)}
 .heading-accent{color:var(--orange)}
 .contact .form-progress>span[aria-current=step]{border-top-color:var(--orange)}
+/* Land contact links on the section label, with a small reading inset. */
+#contact{scroll-margin-top:calc(24px - 105px - 110px)}
+@media(max-width:800px){#contact{scroll-margin-top:calc(24px - 105px - 75px)}}

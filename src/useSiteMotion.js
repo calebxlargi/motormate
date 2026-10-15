@@ -15,7 +15,7 @@ gsap.from('.benefits article',{y:55,opacity:0,duration:.9,stagger:.16,ease:'powe
 gsap.from('.photo-panel',{clipPath:'inset(7% 5% 7% 5% round 22px)',ease:'none',scrollTrigger:{trigger:'.photo-panel',start:'top 95%',end:'top 25%',scrub:1}});
 gsap.fromTo('.photo-panel > img',{scale:1.13,yPercent:-4},{scale:1.02,yPercent:4,ease:'none',scrollTrigger:{trigger:'.photo-panel',start:'top bottom',end:'bottom top',scrub:1}});
 gsap.from('.photo-caption > *',{y:40,opacity:0,duration:1,stagger:.16,ease:'power3.out',scrollTrigger:once('.photo-caption')});
-const network=gsap.timeline({scrollTrigger:once('.partner-map')});network.from('.network-hub',{scale:.8,opacity:0,duration:.8,ease:'back.out(1.3)'}).from('.network-wire',{strokeDasharray:350,strokeDashoffset:350,duration:1.3,ease:'power2.inOut'},.25).from('.network-node',{y:20,opacity:0,duration:.7,stagger:.13},.5);
+const network=gsap.timeline({scrollTrigger:once('.partner-map')});network.from('.network-hub > *',{y:12,opacity:0,duration:.8,ease:'power3.out'}).from('.network-node',{opacity:0,duration:.7,stagger:.13},.3);
 gsap.from('.faq details',{y:25,opacity:0,duration:.65,stagger:.08,scrollTrigger:once('.faq')});
 gsap.from('.contact h2 > span',{x:-25,y:25,opacity:0,duration:1,ease:'power3.out',scrollTrigger:once('.contact')});
 gsap.from('.buyer-form',{y:30,opacity:0,duration:.85,scrollTrigger:once('.buyer-form')});

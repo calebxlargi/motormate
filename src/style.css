@@ -42,3 +42,19 @@ button{color:inherit;-webkit-appearance:none;appearance:none}.arrow-icon{display
 /* Land contact links on the section label, with a small reading inset. */
 #contact{scroll-margin-top:calc(24px - 105px - 110px)}
 @media(max-width:800px){#contact{scroll-margin-top:calc(24px - 105px - 75px)}}
+/* Header and footer identity, enlarged 30% across breakpoints. */
+.brand{width:260px;height:71.5px}.brand img{object-fit:contain}
+footer{padding:76px 6% 28px;background:#151e21}
+.footer-grid{display:grid;grid-template-columns:1.2fr .75fr 1.25fr .65fr;gap:5%;align-items:start;padding-bottom:72px}
+.footer-brand img{display:block;width:286px;height:104px;max-width:100%;object-fit:contain;object-position:left center}
+.footer-brand p{color:#aab2ae;font-size:16px;margin-top:20px}
+.footer-column h3{font-family:inherit;font-size:11px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:#96a29d;margin:17px 0 28px}
+footer .footer-column nav{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin:0;font-size:16px}
+.footer-column a{display:inline-flex;align-items:center;gap:14px;line-height:1.4;transition:color .2s}
+.footer-column a:hover{color:var(--orange)}.footer-column .arrow-icon{width:15px;height:15px;color:var(--orange)}
+.footer-address address{font-style:normal;font-size:14px;line-height:1.85;color:#aab2ae}
+.footer-address strong{display:block;font-weight:400;color:#e9ece5;font-size:16px;margin-bottom:12px}
+.footer-bottom{align-items:center;gap:24px;line-height:1.6}
+@media(max-width:1100px){.footer-grid{grid-template-columns:1.2fr 1fr;gap:40px 8%}.footer-brand{grid-column:1}.footer-address{grid-column:1;grid-row:2}.footer-grid>.footer-column:last-child{grid-column:2;grid-row:2}}
+@media(max-width:800px){.brand{width:201.5px;height:71.5px}header{gap:12px}.nav-actions{flex-shrink:0}footer{padding-top:52px}.footer-grid{gap:34px 26px;padding-bottom:42px}.footer-brand{grid-column:1/-1}.footer-column h3{margin-top:0;margin-bottom:22px}.footer-address{grid-column:1/-1;grid-row:3}.footer-grid>.footer-column:last-child{grid-column:2;grid-row:2}.footer-brand img{width:286px;height:104px}.footer-brand p{margin-top:10px}.footer-bottom>span:nth-child(2){display:none}}
+@media(max-width:360px){header{padding-left:4%;padding-right:4%}.menu-button{gap:10px;padding-left:15px}.brand{flex-shrink:1}}

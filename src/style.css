@@ -95,3 +95,4 @@ footer .footer-column nav{display:flex;flex-direction:column;align-items:flex-st
 @media(max-width:800px){.photo-panel{height:auto;background:var(--ink)}.photo-panel>img{display:block;width:100%;height:auto;object-fit:contain;transform:none!important}.photo-panel:after{display:none}.photo-panel .photo-caption{position:relative;left:auto;bottom:auto;padding:24px 6% 28px}.photo-caption p{margin-top:12px;font-size:clamp(32px,8.7vw,48px)}}
 .marquee{font-size:clamp(21px,3.5vw,49px)}
 .form-progress{grid-template-columns:repeat(5,minmax(0,1fr))}
+.marquee{padding:16px 0}

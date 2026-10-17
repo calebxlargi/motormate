@@ -14,6 +14,6 @@ export default function CarCarousel(){
  return <div className="photo-panel car-carousel" role="region" aria-label="Car gallery">
  {names.map((name,index)=><img key={name} src={`/assets/cars/car_images_${index+1}.webp`} width="1920" height="1280" alt={active===index?name:''} aria-hidden={active!==index} className={active===index?'is-active':''} loading="eager" onLoad={()=>markLoaded(index)}/>)}
 
- <div className="photo-caption"><span>A CAR THAT FITS YOUR LIFE</span><p>Go your <em>own way.</em></p></div>
+ <div className="photo-caption"><span>A CAR THAT FITS YOUR LIFESTYLE</span><p>Go your <em>own way.</em></p></div>
  </div>
 }

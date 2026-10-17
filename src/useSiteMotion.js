@@ -21,7 +21,7 @@ gsap.fromTo('.photo-panel > img',{scale:1.13,yPercent:-4},{scale:1.02,yPercent:4
 gsap.from('.photo-caption > *',{y:40,opacity:0,duration:1,stagger:.16,ease:'power3.out',scrollTrigger:once('.photo-caption')});}
 if(root.current.querySelector('.partner-map')){const network=gsap.timeline({scrollTrigger:once('.partner-map')});network.from('.network-hub > *',{y:12,opacity:0,duration:.8,ease:'power3.out'}).from('.network-node',{opacity:0,duration:.7,stagger:.13},.3);}
 if(root.current.querySelector('.faq')){gsap.utils.toArray('.faq details').forEach(el=>observeReveal(el,{y:25,opacity:0,duration:.65}));}
-if(root.current.querySelector('.contact')){gsap.from('.contact h2 > span:last-child',{x:-25,y:25,opacity:0,duration:1,ease:'power3.out',scrollTrigger:once('.contact')});}
+if(root.current.querySelector('.contact')){gsap.from('.contact h2 > .contact-title-accent',{x:-25,y:25,opacity:0,duration:1,ease:'power3.out',scrollTrigger:once('.contact')});}
 if(root.current.querySelector('.buyer-form')){gsap.from('.buyer-form',{y:30,opacity:0,duration:.85,scrollTrigger:once('.buyer-form')});}
 // Refresh after webfonts settle so pin distances and reveal positions match the final layout.
 document.fonts?.ready.then(()=>{if(root.current)ScrollTrigger.refresh()});

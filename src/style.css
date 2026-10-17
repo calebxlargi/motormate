@@ -100,3 +100,4 @@ footer .footer-column nav{display:flex;flex-direction:column;align-items:flex-st
 .car-carousel{background:#fff}.car-carousel>img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transform:none!important;opacity:0;transition:opacity .65s ease-in-out;will-change:auto}.car-carousel>img.is-active{opacity:1}
 @media(max-width:800px){.car-carousel{padding-top:66.6667%;height:auto}.car-carousel>img{height:auto;aspect-ratio:3/2}.car-carousel .photo-caption{background:var(--ink)}}
 .marquee>div{display:flex;gap:0;width:max-content}.marquee-group{display:flex;flex-shrink:0;gap:0}.marquee-group>span{display:block;flex-shrink:0;padding-right:.5em}
+@media(max-width:800px){.car-carousel>img{width:120%;max-width:none;left:-10%;top:-6.6667vw}}

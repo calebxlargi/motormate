@@ -1,0 +1,11 @@
+# motormate
+
+> A Malaysian multi-brand car-buying advisory service. One consultant guides buyers from shortlist to handover.
+
+## Website
+
+- [Home](https://motormate.my/): How motormate helps buyers compare cars and coordinate their purchase.
+- [Buying journey](https://motormate.my/#journey): The six steps from sharing your needs to buying with confidence.
+- [Frequently asked questions](https://motormate.my/#faq): Answers about the service, test drives and trade-ins.
+- [Buyer enquiry](https://motormate.my/#contact): Prepare an enquiry for your next car.
+- [Dealer partnerships](https://motormate.my/partners/): Information for dealers interested in working with motormate.

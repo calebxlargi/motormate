@@ -102,5 +102,3 @@ footer .footer-column nav{display:flex;flex-direction:column;align-items:flex-st
 @media(max-width:800px){.car-carousel>img{width:120%;max-width:none;left:-10%;top:-6.6667vw}}
 @media(max-width:800px){.car-carousel>img{width:144%;left:-22%;top:-14.6667vw}}
 @media(max-width:800px){.car-carousel>img{width:129.6%;left:-14.8%;top:-9.8667vw}}
-
-.heading-accent,.hero h1>span:first-child,.contact h2>.contact-title-accent{color:#ae4d00}

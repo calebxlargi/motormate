@@ -1,5 +1,5 @@
 import React,{useEffect,useRef,useState} from 'react';
-const names=['Perodua Bezza','Proton e.MAS 5','Proton S70','Honda City','Toyota Vios','Mitsubishi Xforce','BYD Atto 3','Jaecoo J7','Jetour T2','XPeng G6','Omoda C9','Zeekr 7X','Volkswagen Tayron','BMW 3 Series','Volvo XC60'];
+const names=['Perodua Bezza','Proton e.MAS 5','Proton S70','Honda City','Toyota Vios','Mitsubishi Xforce','BYD Atto 3','Jaecoo J7','Jetour T2','XPeng G6','Omoda C9','Zeekr 7X','Volkswagen Tayron','BMW 3 Series','Volvo XC60','Nissan Navara PRO-4X','Denza D9','Red Mazda crossover'];
 const nextCar=index=>(index+1)%names.length;
 
 function randomStart(){

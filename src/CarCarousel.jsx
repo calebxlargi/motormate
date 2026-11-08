@@ -1,5 +1,5 @@
 import React,{useEffect,useRef,useState} from 'react';
-const names=['Perodua Bezza','Proton e.MAS 5','Proton S70','Honda City','Toyota Vios','Mitsubishi Xforce','BYD Atto 3','Jaecoo J7','Jetour T2','XPeng G6','Omoda C9','Zeekr 7X','Volkswagen Tayron','BMW 3 Series','Volvo XC60','Nissan Navara PRO-4X','Denza D9','Red Mazda crossover'];
+const names=['Perodua Bezza','Proton e.MAS 5','Proton S70','Honda City','Toyota Vios','Mitsubishi Xforce','BYD Atto 3','Jaecoo J7','Jetour T2','XPeng G6','Omoda C9','Zeekr 7X','Volkswagen Tayron','BMW 3 Series','Volvo XC60','Red Nissan Navara','Denza D9','Red Mazda crossover'];
 const nextCar=index=>(index+1)%names.length;
 
 function randomStart(){
@@ -37,7 +37,8 @@ export default function CarCarousel(){
  return <div ref={panel} className="photo-panel car-carousel" role="region" aria-label="Car gallery">
  {nearby&&[previous,active,upcoming].filter(index=>index!==null).map(index=>{
   const path='/assets/cars/car_images_'+(index+1);
-  return <img key={index} src={path+'.webp'} srcSet={path+'-768.webp 768w, '+path+'-1280.webp 1280w, '+path+'.webp 1920w'} sizes="(max-width: 800px) 130vw, 100vw" width="1920" height="1280" alt={active===index?names[index]:''} aria-hidden={active!==index} className={active===index?'is-active':''} fetchPriority={active===index?'auto':'low'} onLoad={()=>markLoaded(index)}/>;
+  const version=index===15?'?v=2':'';
+  return <img key={index} src={path+'.webp'+version} srcSet={path+'-768.webp'+version+' 768w, '+path+'-1280.webp'+version+' 1280w, '+path+'.webp'+version+' 1920w'} sizes="(max-width: 800px) 130vw, 100vw" width="1920" height="1280" alt={active===index?names[index]:''} aria-hidden={active!==index} className={active===index?'is-active':''} fetchPriority={active===index?'auto':'low'} onLoad={()=>markLoaded(index)}/>;
  })}
  <div className="photo-caption"><span>A CAR THAT FITS YOUR LIFESTYLE</span><p>Go your <em>own way.</em></p></div>
  </div>

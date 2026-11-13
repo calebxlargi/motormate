@@ -1,9 +1,16 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "motormate",
+  "main": "scripts/worker.js",
   "compatibility_date": "2026-10-12",
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "404-page"
-  }
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/leads", "/api/catalogue", "/catalogue-photos/*"]
+  },
+  "vars": { "MOTORMATE_SMS_MODE": "off" },
+  "ratelimits": [
+    { "name": "LEAD_RATE_LIMIT", "namespace_id": "1001", "simple": { "limit": 10, "period": 60 } }
+  ]
 }

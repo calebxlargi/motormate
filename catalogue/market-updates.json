@@ -1,0 +1,51 @@
+{
+  "fuel": {
+    "from": "2026-11-12",
+    "through": "2026-11-18",
+    "source": "https://www.mof.gov.my/portal/ms/berita/siaran-media/harga-petrol-dan-diesel-tanpa-subsidi-menurun-kerajaan-terus-komited-ringankan-beban-rakyat",
+    "rates": [
+      { "id": "ron95", "name": "RON95 without subsidy", "price": 3.87, "previous": 4.27 },
+      { "id": "ron97", "name": "RON97", "price": 4.20, "previous": 4.70 },
+      { "id": "diesel", "name": "Diesel without subsidy", "price": 4.87, "previous": 5.12 },
+      { "id": "budi95", "name": "RON95 · BUDI95", "price": 1.99 },
+      { "id": "budi-diesel", "name": "Diesel · BUDI Diesel", "price": 2.10 },
+      { "id": "skps", "name": "Petrol · SKPS", "price": 2.05 },
+      { "id": "skds", "name": "Diesel · SKDS", "price": 2.15 }
+    ]
+  },
+  "launches": [
+    {
+      "name": "Honda City Hatchback",
+      "status": "Launched",
+      "date": "19 October 2026",
+      "price": "From RM95,900 OTR without insurance",
+      "summary": "Honda launched three variants, with petrol V and RS grades alongside the e:HEV RS.",
+      "source": "https://www.honda.com.my/press-release/view/859/elevated-design-meets-uncompromised-utility-honda-malaysia-launches-the-new-city-hatchback"
+    },
+    {
+      "name": "Proton X50 Sport Edition",
+      "status": "Launched",
+      "date": "16 October 2026",
+      "price": "RM1,999 above the Flagship variant",
+      "summary": "The styling package adds exterior and cabin upgrades to the X50 Flagship.",
+      "model": "proton-x50",
+      "source": "https://www.proton.com/happenings/2026/october/all-new-proton-x50-sport-edition-launched-with-15-exclusive-upgrades-for-just-rm1-999"
+    },
+    {
+      "name": "GWM ORA 5 Hi2 HEV",
+      "status": "Upcoming",
+      "date": "November 2026 target",
+      "price": "Estimated below RM115,000",
+      "summary": "GWM opened bookings for its locally assembled compact hybrid SUV. Final pricing is pending.",
+      "source": "https://www.gwm.com.my/en/news-list/2026/61-release"
+    },
+    {
+      "name": "Proton AMA 02",
+      "status": "Upcoming",
+      "date": "Launch date to be announced",
+      "summary": "Proton confirmed that its upcoming model, currently known as AMA 02, will debut its i-HEV hybrid system.",
+      "source": "https://www.proton.com/happenings/2026/november/proton-confirms-official-name-of-new-hybrid-technology-drivetrain"
+    }
+  ],
+  "launchesChecked": "13 November 2026"
+}

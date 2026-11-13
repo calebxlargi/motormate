@@ -9,11 +9,14 @@
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
+    "gsap": "^3.14.0",
+    "jszip": "^3.10.2",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "gsap": "^3.14.0"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
+    "firebase": "^13.2.0",
+    "firebase-admin": "^14.5.0",
     "vite": "^7.1.0"
   }
 }

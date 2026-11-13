@@ -9,6 +9,7 @@
     "not_found_handling": "404-page",
     "run_worker_first": ["/api/leads", "/api/catalogue", "/catalogue-photos/*"]
   },
+  "d1_databases": [{ "binding": "CATALOGUE", "database_name": "motormate-catalogue", "database_id": "261a18e5-5f67-41af-ad76-d972b7f7c49c" }],
   "vars": { "MOTORMATE_SMS_MODE": "off" },
   "ratelimits": [
     { "name": "LEAD_RATE_LIMIT", "namespace_id": "1001", "simple": { "limit": 10, "period": 60 } }
